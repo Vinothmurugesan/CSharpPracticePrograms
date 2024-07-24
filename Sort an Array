@@ -1,0 +1,27 @@
+using System;
+using System.Linq;
+
+public class HelloWorld{
+  public static void Main(string[] args){
+    int size = Convert.ToInt32(Console.ReadLine());
+    int[] arr = new int[size];
+    for(int i=0; i<size; i++){
+      arr[i] = Convert.ToInt32(Console.ReadLine());
+    }
+    Console.WriteLine("Array Before Sorted");
+    foreach(int a in arr){
+      Console.WriteLine(a);
+    }
+    for(int i=0; i<size; i++){
+      for(int j=i+1; j<size; j++){
+        if(arr[i]>arr[j]){
+          arr[j] = arr[i]+arr[j] - (arr[i] = arr[j]);
+        }
+      }
+    }
+     Console.WriteLine("Array After Sorted");
+    foreach(int b in arr){
+      Console.WriteLine(b);
+    }
+  }
+}
