@@ -1,0 +1,19 @@
+using System;
+using System.Collections.Generic;
+
+public class HelloWorld{
+  public static void Main(string[] args){
+    int[] arr = new int[]{1,2,7,3,4,5,6,7,7,1,8,8,8,8,8,9,9,0,0};
+    HashSet<int> set = new HashSet<int>();
+    for(int i=0; i<arr.Length; i++){
+      for(int j=i+1; j<arr.Length; j++){
+        if(arr[i]==arr[j]){
+          set.Add(arr[i]);
+        }
+      }
+    }
+    foreach(int a in set){
+    Console.WriteLine(a);
+    }
+  }
+}
