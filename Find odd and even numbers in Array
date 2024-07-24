@@ -1,0 +1,30 @@
+using System;
+using System.Collections.Generic;
+
+public class HelloWorld{
+  public static void Main(string[] args){
+    string a = Console.ReadLine().Trim().ToLower();
+    int[] arr = new int[]{1,2,3,4,5,65,67,7,8};
+    List<int> evenlist = new List<int>();
+    List<int> oddlist = new List<int>();
+    for(int i=0; i<arr.Length; i++){
+      if(arr[i]%2==0){
+        evenlist.Add(arr[i]);
+      }
+      else{
+        oddlist.Add(arr[i]);
+    }
+    }
+    if(a == "odd"){
+      foreach(int n in oddlist){
+        Console.WriteLine(n);
+      }
+    }
+    else if(a=="even"){
+      foreach(int n in evenlist){
+        Console.WriteLine(n);
+      }
+    
+  }
+}
+}
