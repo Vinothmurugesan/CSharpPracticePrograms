@@ -1,0 +1,22 @@
+using System;
+using System.Text.RegularExpressions;
+using System.Collections.Generic;
+
+public class HelloWorld{
+  public static void Main(string[] args){
+    int num = Convert.ToInt32(Console.ReadLine());
+    int odd =0;
+    int even =0;
+    while(num!=0){
+      int a = num%10;
+      if(a%2==0){
+        even++;
+      }
+      else{
+        odd++;
+      }
+      num = num/10;
+    }
+    Console.WriteLine("Even number count: "+even+" "+"Odd number count:"+odd);
+  }
+}
