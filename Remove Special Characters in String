@@ -1,0 +1,18 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text.RegularExpressions;
+
+namespace HelloWorld
+{
+	public class Program
+	{
+		public static void Main(string[] args)
+		{
+		  string name = Console.ReadLine();
+		  Console.WriteLine("This is a String before removing a special character: "+name);
+		 string input =  Regex.Replace(name, "[^a-zA-Z0-9]", "");
+		  Console.WriteLine("This is a string after removing a special characters: "+input);
+		}
+	}
+}
