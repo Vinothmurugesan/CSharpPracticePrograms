@@ -1,0 +1,20 @@
+using System;
+using System.Collections.Genric;
+using System.Text.RegularExpressions;
+
+public class HelloWorld{
+  public static void Main(string[] args){
+    string sen = Console.ReadLine();
+    string[] arr = sen.Split(" ");
+    string final = "";
+    
+  foreach(string a in arr){
+    string flag = "";
+    for(int i=a.Length-1; i>=0; i--){
+      flag = flag+a[i];
+    }
+    final = final+flag+" ";
+}
+  Console.WriteLine(final);
+  }
+}
