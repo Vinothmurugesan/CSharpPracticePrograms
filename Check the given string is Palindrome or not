@@ -1,0 +1,20 @@
+using System;
+using System.Text.RegularExpressions;
+using System.Collections.Generic;
+
+public class HelloWorld{
+  public static void Main(string[] args){
+    string name = Console.ReadLine();
+    string rev = "";
+    string org = name;
+    for(int i=name.Length-1; i>=0; i--){
+      rev = rev+name[i];
+    }
+    if(rev==org){
+      Console.WriteLine("The given String is Palindrome");
+    }
+    else{
+      Console.WriteLine("The given string is Not Palindrome");
+    }
+  }
+}
