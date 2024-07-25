@@ -1,0 +1,26 @@
+using System;
+using System.Text.RegularExpressions;
+using System.Collections.Generic;
+
+public class HelloWorld{
+  public static void Main(string[] args){
+    int num1 = Convert.ToInt32(Console.ReadLine());
+    int num2 = Convert.ToInt32(Console.ReadLine());
+    int num3 = Convert.ToInt32(Console.ReadLine());
+    
+    // Method one
+    if(num1>num2 && num1>num3){
+      Console.WriteLine(num1);
+    }
+    else if(num2>num1 && num2>num3){
+      Console.WriteLine(num2);
+    }
+    else{
+      Console.WriteLine(num3);
+    }
+    
+    //Method Two
+    int ans = num1>(num2>num3?num2:num3)?num1:(num2>num3?num2:num3);
+    Console.WriteLine(ans);
+  }
+}
