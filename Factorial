@@ -1,0 +1,14 @@
+using System;
+using System.Text.RegularExpressions;
+using System.Collections.Generic;
+
+public class HelloWorld{
+  public static void Main(string[] args){
+    int num = Convert.ToInt32(Console.ReadLine());
+    int a =1;
+    for(int i=1; i<=num; i++){
+      a = a*i;
+    }
+    Console.WriteLine(a);
+  }
+}
