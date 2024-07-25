@@ -1,0 +1,11 @@
+using System;
+using System.Collections.Generic;
+using System.Text.RegularExpressions;
+
+public class HelloWorld{
+  public static void Main(string[] args){
+    string name = Console.ReadLine();
+    string name1 = Regex.Replace(name, " ","");
+    Console.WriteLine(name1);
+  }
+}
